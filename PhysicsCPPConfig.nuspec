@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>PhysicsCPPConfig</id>
+    <version>1.0.0</version>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <owners>G. Watts</owners>
+    <authors>G. Watts</authors>
+    <description>Suppresses some common warnings found in HEP code, also turns off linking against the debug libraries.</description>
+    <title>Physics CPP Config</title>
+    <tags>Data Analysis C++ ROOT nativepackage</tags>
+    <summary>Modifies compile time flags to run more pleasently against, among other things, ROOT.</summary>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <releaseNotes></releaseNotes>
+    <projectUrl>https://github.com/gordonwatts/PhysicsCPPConfig</projectUrl>
+    <copyright />
+  </metadata>
+  <files>
+	<file src="PhysicsCPPConfig.targets" target="/build/native/PhysicsCPPConfig.targets" />
+	<file src="PhysicsCPPConfig.props" target="/build/native/PhysicsCPPConfig.props" />
+  </files>
+</package>
