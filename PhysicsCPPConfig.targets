@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Bogus>%(ClCompile.PreprocessorDefinitions)</Bogus>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<!--
+			<PreprocessorDefinitions>%(PreprocessorDefinitions.Replace(";_DEBUG;",";NDEBUG;"))</PreprocessorDefinitions>
+			<PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB</PreprocessorDefinitions>
+			-->
+			<PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<UndefinePreprocessorDefinitions>_DEBUG</UndefinePreprocessorDefinitions>
+		</ClCompile>
+	</ItemDefinitionGroup>
 </Project>

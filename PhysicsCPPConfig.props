@@ -4,7 +4,8 @@
 	<ItemDefinitionGroup>
 		<ClCompile>
 			<DisableSpecificWarnings>4244</DisableSpecificWarnings>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<PreprocessorDefinitions>$(PreprocessorDefinitions.Replace(";_DEBUG;",";NDEBUG;"))</PreprocessorDefinitions>
 		</ClCompile>
-	</ItemDefinitionGroup>
-	
+	</ItemDefinitionGroup>	
 </Project>
